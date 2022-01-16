@@ -1,7 +1,9 @@
-var cdate = $("#currentDay");
+//Date display
 function fecha() {
-var fecha = moment().format("MMM DD, YYYY");
-cdate.text(cdate);
+var fecha = moment().format("dddd, MMMM Do YYYY, h:mm:ss ");
+var cdate = $("#currentDay");
+cdate.html(fecha);
 }
-setInterval(fecha, 10000);
-console.log(cdate);
+setInterval(fecha, 1000);
+
+
