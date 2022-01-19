@@ -147,23 +147,82 @@ fivepmsave.addEventListener("click", function(event) {
 })
 
 
-
-//YOU CANT COMPARE A DATE WITHOUT TIME TO A DATE WITH TIME
+//Attempting colorchange function
 
 function hours() {
-    var kyu = moment().startOf('day').add(9,'hours').format("hh:mm")
-    var m = moment().format("hh:mm");
-    console.log(kyu)
-    var nineblock = document.getElementById("nueves");
-    console.log(moment().isBefore("23:00"));
-      if (moment(m).isAfter(kyu)) {
+   var nineblock = document.querySelector("#kyu");
+   var tenblock = document.querySelector("#ju");  
+   var elevenblock = document.querySelector("#juichi");
+   var twelveblock = document.querySelector("#juni");
+   var thirteenblock = document.querySelector("#jusan");
+   var fourteenblock = document.querySelector("#juyon");
+   var fifteenblock = document.querySelector("#jugo");
+   var sixteenblock = document.querySelector("#juroku");
+   var seventeenblock = document.querySelector("#junana");
+
+//9am
+      if (moment().isAfter(moment().startOf('day').add(9,'hours'))) {
       nineblock.classList.add('past');
-      console.log(nineblock)
+      
     }
-    else if (moment(m).isBefore(kyu)) {
+    else if (moment().isAfter(moment().startOf('day').add(9,'hours'))) {
       nineblock.classList.add('future');
-      console.log(nineblock);
+      
     }
-    
+    //10am
+    if (moment().isAfter(moment().startOf('day').add(10,'hours'))) {
+      tenblock.classList.add('past');
+          }
+    else if (moment().isAfter(moment().startOf('day').add(10,'hours'))) {
+      tenblock.classList.add('future');
+          }
+   //11am
+  if (moment().isAfter(moment().startOf('day').add(11,'hours'))) {
+      elevenblock.classList.add('past');
+          }
+    else if (moment().isAfter(moment().startOf('day').add(11,'hours'))) {
+      elevenblock.classList.add('future');
+          }
+    //12pm
+  if (moment().isAfter(moment().startOf('day').add(12,'hours'))) {
+      twelveblock.classList.add('past');
+          }
+    else if (moment().isAfter(moment().startOf('day').add(12,'hours'))) {
+      twelveblock.classList.add('future');
+          }
+          //1pm
+if (moment().isAfter(moment().startOf('day').add(13,'hours'))) {
+      thirteenblock.classList.add('past');
+          }
+    else if (moment().isAfter(moment().startOf('day').add(13,'hours'))) {
+      thirteenblock.classList.add('future');
+          }
+    //2pm
+  if (moment().isAfter(moment().startOf('day').add(14,'hours'))) {
+      fourteenblock.classList.add('past');
+          }
+    else if (moment().isAfter(moment().startOf('day').add(14,'hours'))) {
+      fourteenblock.classList.add('future');
   }
+  //3pm
+  if (moment().isAfter(moment().startOf('day').add(15,'hours'))) {
+    fifteenblock.classList.add('past');
+        }
+  else if (moment().isAfter(moment().startOf('day').add(15,'hours'))) {
+    fifteenblock.classList.add('future');
+        }
+  //4pm
+if (moment().isAfter(moment().startOf('day').add(16,'hours'))) {
+    sixteenblock.classList.add('past');
+        }
+  else if (moment().isAfter(moment().startOf('day').add(16,'hours'))) {
+    sixteenblock.classList.add('future');
+}
+if (moment().isAfter(moment().startOf('day').add(17,'hours'))) {
+  seventeenblock.classList.add('past');
+      }
+else if (moment().isAfter(moment().startOf('day').add(17,'hours'))) {
+  seventeenblock.classList.add('future');
+}
+}
 hours();
