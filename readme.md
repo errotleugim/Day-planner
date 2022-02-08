@@ -3,4 +3,4 @@ Currently the momentJS part of it isn't working great. Past and future events ha
 
 
 Attached is a screenshot of the application.
-![Screenshot of website](/assets/screenshot.png?raw=true "Some title")
+![Screenshot of website](/assets/screenshot.png)
